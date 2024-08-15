@@ -21,9 +21,9 @@ html {
 
 /* HOME PAGE  */
 
-.video-banner {
+/* .video-banner {
   height: 100vh;
-}
+} */
 
 .video-play-btn {
   position: absolute;
@@ -142,7 +142,7 @@ html {
 .home-service-img1,
 .home-service-img2 {
   width: 100%;
-  height: 95vh;
+  /* height: 95vh; */
   display: block;
   filter: brightness(0.5);
   cursor: pointer;
@@ -607,6 +607,45 @@ h2 {
   border: none;
   color: var(--white-text);
 }
+
+/* SIGNAGE */
+
+.video-banner.singage {
+  position: relative;
+}
+
+.banner-text {
+  position: absolute;
+  top: 40%;
+}
+
+.banner-text h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  /* line-height: 98px; */
+}
+
+.signage-images {
+  position: relative;
+}
+
+.signage-images .col-lg-3 {
+  position: absolute;
+  z-index: 150;
+  top: 20%;
+  left: 20%;
+}
+
+.signage-images .col-lg-2 {
+  position: absolute;
+  top: -5%;
+  right: 30%;
+}
+
+.signage-images .col-lg-1 {
+  position: absolute;
+}
 /* MOBILE RESPONSIVE  */
 
 @media screen and (max-width: 900px) {
@@ -774,5 +813,23 @@ h2 {
 
   .owl-navs {
     top: 30%;
+  }
+
+  .signage-images .col-lg-3 {
+    position: relative;
+    top: 0;
+    left: -22px;
+  }
+
+  .signage-images .col-lg-2 {
+    position: absolute;
+    top: -14%;
+    right: -20%;
+  }
+
+  .signage-images .col-lg-1 {
+    position: absolute;
+    top: -9%;
+    left: -5%;
   }
 }
