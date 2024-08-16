@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+        <title>Scoville Retail</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="navbar fixed-top nav-transparent">
+                <div class="container-fluid px-sm-3">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="./assets/images/scoville-logo.png"
+                            alt="scoville-logo" width="115px" height="75px">
+                    </a>
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasDarkNavbar"
+                        aria-controls="offcanvasDarkNavbar"
+                        aria-label="Toggle navigation">
+                        <img src="./assets/images/white-menu-icon.png"
+                            alt="hamburger-menu" width="50px" height="50px">
+                    </button>
+                    <div
+                        class="offcanvas offcanvas-end text-bg-dark w-100 px-lg-5 px-3"
+                        tabindex="-1"
+                        id="offcanvasDarkNavbar"
+                        aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-header">
+                            <a href="./index.html" class="offcanvas-title"
+                                id="offcanvasDarkNavbarLabel">
+                                <img src="./assets/images/scoville-logo.png"
+                                    alt="scoville-logo" width="115px"
+                                    height="75px">
+                            </a>
+                            <button type="button"
+                                class="btn-close btn-close-white"
+                                data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul
+                                class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page"
+                                        href="./index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link"
+                                        href="./about-us.html">About Us</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link"
+                                        href="./contact-us.html">Contact Us</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="video-banner signage">
+            <div class="row">
+                <div class="video-placeholder" id="videoPlaceholder">
+                    <img src="./assets/images/placeholder.png" alt="placeholder"
+                        class="placeholder-image">
+                    <div class="video-play-btn">
+                        <img src="./assets/images/play-icon.png"
+                            alt="play-icon">
+                    </div>
+                </div>
+                <video class="home-video" id="homeVideo" muted autoplay loop>
+                    <source src="./assets/vidoes/big_buck_bunny_720p_1mb.mp4"
+                        type="video/mp4">
+
+                </video>
+                <!-- <img class="home-video" src="./assests/images/Mask group.png"
+                    alt="Mask"> -->
+                <!-- <div class="video-play-btn" id="playButton">
+                    <img src="./assests/images/play-icon.png" alt="play-icon">
+                </div> -->
+                <div class="banner-text">
+                    <h1>Brilliant FURNITURE <br>
+                        Services.</h1>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="grow-business signage">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-6 signage-images">
+                                <div class="col-lg-3">
+                                    <img
+                                        src="./assets/images/furniture-banner.png"
+                                        alt="grow-business">
+                                </div>
+                                <div class="col-lg-2">
+                                    <img
+                                        src="./assets/images/singage-banner.png"
+                                        alt>
+                                </div>
+                                <div class="col-lg-1">
+                                    <img src="./assets/images/furniture1.png"
+                                        alt>
+                                </div>
+                                <!-- <div class="grow-business-img">
+
+                                    
+                                </div> -->
+
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="grow-business-content">
+                                    <h1>Furniture</h1>
+                                    <p>Lorem ipsum dolor sit amet. Ad odit sunt
+                                        aut temporibus omnis et officia incidunt
+                                        in reprehenderit illum ut nemo sint. Sed
+                                        possimus dolorem et galisum corporis ut
+                                        quisLorem ipsum dolor sit amet. Ad odit
+                                        sunt aut temporibus omnis Lorem ipsum
+                                        dolor sit amet. Ad odit sunt aut
+                                        temporibus omnis.. Lorem ipsum dolor sit
+                                        amet. Ad odit sunt aut temporibus omnis
+                                        et officia incidunt in reprehenderit
+                                        illum ut nemo sint. Sed possimus dolorem
+                                        et galisum corporis ut quisLorem ipsum
+                                        dolor sit amet. Ad odit sunt aut
+                                        temporibus omnis Lorem ipsum dolor sit
+                                        amet. Ad odit sunt aut temporibus
+                                        omnis.</p>
+
+                                    <div class="signage-points">
+                                        <ul>
+                                            <li>Panel Saw</li>
+                                            <li>Automated Edge Bending</li>
+                                            <li>Multi Boring Machines</li>
+                                            <li>Hot and Cold Press
+                                                Laminates</li>
+                                            <li>Paint Booth</li>
+                                            <li>Battery-Operated Wireless
+                                                Installation Tools</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="signage-brands">
+            <div class="signage-brands-carousel">
+                <div
+                    class="tabs owl-carousel owl-theme signage-brands-carousel-content ">
+
+                    <div class="tab item active" data-tab="tab1">
+                        <h4><img
+                                src="./assets/images/brands/reliance-digital-logo.png"
+                                class="img-responsive"
+                                alt="reliance-digital-logo"> </h4>
+                    </div>
+                    <div class="tab item" data-tab="tab2">
+                        <h4><img
+                                src="./assets/images/brands/honda-logo.png"
+                                class="img-responsive" alt="honda-logo"></h4>
+                    </div>
+                    <div class="tab item" data-tab="tab3">
+                        <h4><img
+                                src="./assets/images/brands/kohler-logo.png"
+                                class="img-responsive" alt="kohler-logo"></h4>
+                    </div>
+                    <div class="tab item" data-tab="tab4">
+                        <h4><img
+                                src="./assets/images/brands/axis-bank-logo.png"
+                                class="img-responsive"
+                                alt="axis-bank-logo"></h4>
+                    </div>
+                    <div class="tab item" data-tab="tab5">
+                        <h4><img
+                                src="./assets/images/brands/cromo-logo.png"
+                                class="img-responsive" alt="cromo-logo"></h4>
+                    </div>
+
+                    <div class="tab item" data-tab="tab6">
+                        <h4><img
+                                src="./assets/images/brands/cromo-logo.png"
+                                class="img-responsive" alt="cromo-logo"></h4>
+                    </div>
+
+                </div>
+
+                <div class="tab-content">
+                    <div id="tab1" class="tab-pane">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-3 col-sm-6 col">
+                                        <div class="signage-brand-imgs">
+                                            <img
+                                                src="./assets/images/grow-business.png"
+                                                alt>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 col">
+                                        <div class="signage-brand-imgs">
+                                            <img
+                                                src="./assets/images/brand-tab1.png"
+                                                alt>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 col">
+                                        <div class="signage-brand-imgs">
+                                            <img
+                                                src="./assets/images/brand-tab2.png"
+                                                alt>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 col">
+                                        <div class="signage-brand-imgs">
+                                            <img
+                                                src="./assets/images/brand-tab3.png"
+                                                alt>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab2" class="tab-pane">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="row">
+
+                                    <div class="col-lg-3 col-sm-6 col">
+                                        <div class="signage-brand-imgs">
+                                            <img
+                                                src="./assets/images/brand-tab1.png"
+                                                alt>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 col">
+                                        <div class="signage-brand-imgs">
+                                            <img
+                                                src="./assets/images/grow-business.png"
+                                                alt>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 col">
+                                        <div class="signage-brand-imgs">
+                                            <img
+                                                src="./assets/images/brand-tab2.png"
+                                                alt>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 col">
+                                        <div class="signage-brand-imgs">
+                                            <img
+                                                src="./assets/images/brand-tab3.png"
+                                                alt>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab3" class="tab-pane">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-3 col-sm-6 col">
+                                        <div class="signage-brand-imgs">
+                                            <img
+                                                src="./assets/images/grow-business.png"
+                                                alt>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 col">
+                                        <div class="signage-brand-imgs">
+                                            <img
+                                                src="./assets/images/brand-tab1.png"
+                                                alt>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 col">
+                                        <div class="signage-brand-imgs">
+                                            <img
+                                                src="./assets/images/brand-tab2.png"
+                                                alt>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 col">
+                                        <div class="signage-brand-imgs">
+                                            <img
+                                                src="./assets/images/brand-tab3.png"
+                                                alt>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab4" class="tab-pane">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-3 col-sm-6 col">
+                                        <div class="signage-brand-imgs">
+                                            <img
+                                                src="./assets/images/grow-business.png"
+                                                alt>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 col">
+                                        <div class="signage-brand-imgs">
+                                            <img
+                                                src="./assets/images/brand-tab1.png"
+                                                alt>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 col">
+                                        <div class="signage-brand-imgs">
+                                            <img
+                                                src="./assets/images/brand-tab2.png"
+                                                alt>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 col">
+                                        <div class="signage-brand-imgs">
+                                            <img
+                                                src="./assets/images/brand-tab3.png"
+                                                alt>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab5" class="tab-pane">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-3 col-sm-6 col">
+                                        <div class="signage-brand-imgs">
+                                            <img
+                                                src="./assets/images/grow-business.png"
+                                                alt>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 col">
+                                        <div class="signage-brand-imgs">
+                                            <img
+                                                src="./assets/images/brand-tab1.png"
+                                                alt>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 col">
+                                        <div class="signage-brand-imgs">
+                                            <img
+                                                src="./assets/images/brand-tab2.png"
+                                                alt>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 col">
+                                        <div class="signage-brand-imgs">
+                                            <img
+                                                src="./assets/images/brand-tab3.png"
+                                                alt>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab6" class="tab-pane">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-3 col-sm-6 col">
+                                        <div class="signage-brand-imgs">
+                                            <img
+                                                src="./assets/images/grow-business.png"
+                                                alt>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 col">
+                                        <div class="signage-brand-imgs">
+                                            <img
+                                                src="./assets/images/brand-tab1.png"
+                                                alt>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 col">
+                                        <div class="signage-brand-imgs">
+                                            <img
+                                                src="./assets/images/brand-tab2.png"
+                                                alt>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 col">
+                                        <div class="signage-brand-imgs">
+                                            <img
+                                                src="./assets/images/brand-tab3.png"
+                                                alt>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="clients">
+            <h2>WHAT OUR CLIENTS SAY?</h2>
+            <div class="clients-carousel">
+                <div class="owl-carousel owl-theme clients-carousel-content">
+                    <div class="item">
+                        <div class="item-card">
+                            <div class="client-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Mauris sodales posuere mi,
+                                    ut
+                                    varius fe Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Mauris sodales
+                                    posuere mi, ut varius fe.</p>
+
+                                <div class="profile">
+                                    <div class="profile-img">
+                                        <img
+                                            src="./assets/images/brand-tab1.png"
+                                            alt>
+                                    </div>
+                                    <div class="profile-content">
+                                        <h5>Lorem</h5>
+                                        <p>Designation</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-card">
+                            <div class="client-content">
+                                <p>Lorem ipsum dolor sit amet,
+                                    consectetur
+                                    adipiscing elit. Mauris sodales posuere mi,
+                                    ut
+                                    varius fe Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Mauris sodales
+                                    posuere mi, ut varius fe.</p>
+
+                                <div class="profile">
+                                    <div class="profile-img">
+                                        <img
+                                            src="./assets/images/brand-tab1.png"
+                                            alt>
+                                    </div>
+                                    <div class="profile-content">
+                                        <h5>Lorem</h5>
+                                        <p>Designation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-card">
+                            <div class="client-content">
+                                <p>Lorem ipsum dolor sit amet,
+                                    consectetur
+                                    adipiscing elit. Mauris sodales posuere mi,
+                                    ut
+                                    varius fe Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Mauris sodales
+                                    posuere mi, ut varius fe.</p>
+
+                                <div class="profile">
+                                    <div class="profile-img">
+                                        <img
+                                            src="./assets/images/brand-tab1.png"
+                                            alt>
+                                    </div>
+                                    <div class="profile-content">
+                                        <h5>Lorem</h5>
+                                        <p>Designation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-card">
+                            <div class="client-content">
+                                <p>Lorem ipsum dolor sit amet,
+                                    consectetur
+                                    adipiscing elit. Mauris sodales posuere mi,
+                                    ut
+                                    varius fe Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Mauris sodales
+                                    posuere mi, ut varius fe.</p>
+
+                                <div class="profile">
+                                    <div class="profile-img">
+                                        <img
+                                            src="./assets/images/brand-tab1.png"
+                                            alt>
+                                    </div>
+                                    <div class="profile-content">
+                                        <h5>Lorem</h5>
+                                        <p>Designation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-card">
+                            <div class="client-content">
+                                <p>Lorem ipsum dolor sit amet,
+                                    consectetur
+                                    adipiscing elit. Mauris sodales posuere mi,
+                                    ut
+                                    varius fe Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Mauris sodales
+                                    posuere mi, ut varius fe.</p>
+
+                                <div class="profile">
+                                    <div class="profile-img">
+                                        <img
+                                            src="./assets/images/brand-tab1.png"
+                                            alt>
+                                    </div>
+                                    <div class="profile-content">
+                                        <h5>Lorem</h5>
+                                        <p>Designation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-card">
+                            <div class="client-content">
+                                <p>Lorem ipsum dolor sit amet,
+                                    consectetur
+                                    adipiscing elit. Mauris sodales posuere mi,
+                                    ut
+                                    varius fe Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Mauris sodales
+                                    posuere mi, ut varius fe.</p>
+
+                                <div class="profile">
+                                    <div class="profile-img">
+                                        <img
+                                            src="./assets/images/brand-tab1.png"
+                                            alt>
+                                    </div>
+                                    <div class="profile-content">
+                                        <h5>Lorem</h5>
+                                        <p>Designation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-card">
+                            <div class="client-content">
+                                <p>Lorem ipsum dolor sit amet,
+                                    consectetur
+                                    adipiscing elit. Mauris sodales posuere mi,
+                                    ut
+                                    varius fe Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Mauris sodales
+                                    posuere mi, ut varius fe.</p>
+
+                                <div class="profile">
+                                    <div class="profile-img">
+                                        <img
+                                            src="./assets/images/brand-tab1.png"
+                                            alt>
+                                    </div>
+                                    <div class="profile-content">
+                                        <h5>Lorem</h5>
+                                        <p>Designation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-card">
+                            <div class="client-content">
+                                <p>Lorem ipsum dolor sit amet,
+                                    consectetur
+                                    adipiscing elit. Mauris sodales posuere mi,
+                                    ut
+                                    varius fe Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Mauris sodales
+                                    posuere mi, ut varius fe.</p>
+
+                                <div class="profile">
+                                    <div class="profile-img">
+                                        <img
+                                            src="./assets/images/brand-tab1.png"
+                                            alt>
+                                    </div>
+                                    <div class="profile-content">
+                                        <h5>Lorem</h5>
+                                        <p>Designation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-card">
+                            <div class="client-content">
+                                <p>Lorem ipsum dolor sit amet,
+                                    consectetur
+                                    adipiscing elit. Mauris sodales posuere mi,
+                                    ut
+                                    varius fe Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Mauris sodales
+                                    posuere mi, ut varius fe.</p>
+
+                                <div class="profile">
+                                    <div class="profile-img">
+                                        <img
+                                            src="./assets/images/brand-tab1.png"
+                                            alt>
+                                    </div>
+                                    <div class="profile-content">
+                                        <h5>Lorem</h5>
+                                        <p>Designation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <div class="floating-whatsapp">
+            <a href="#">
+                <div class="whatsapp-container">
+                    <img src="./assets/images/whatsapp-icon.png"
+                        alt="whatsapp-icon">
+                </div>
+            </a>
+        </div>
+
+        <footer class="footer-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="logo-content">
+                                    <img src="./assets/images/scoville-logo.png"
+                                        alt="scoville-logo" width="115px"
+                                        height="75px">
+
+                                    <p>With an experience of over 48 years in
+                                        the
+                                        signage industry.</p>
+                                    <div class="social-links text-start">
+                                        <ul>
+                                            <li>
+                                                <a href="#" target="_blank">
+                                                    <img
+                                                        src="./assets/images/fb-icon.png"
+                                                        alt="fb-icon">
+                                                </a>
+
+                                            </li>
+                                            <li>
+                                                <a href="#" target="_blank">
+                                                    <img
+                                                        src="./assets/images/twitter-icon.png"
+                                                        alt="twitter-icon">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" target="_blank">
+                                                    <img
+                                                        src="./assets/images/insta-icon.png"
+                                                        alt="insta-icon">
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="quick-links">
+                                            <h5>
+                                                Quick Link
+                                            </h5>
+
+                                            <ul>
+                                                <li>
+                                                    <a
+                                                        href="./about-us.htmls">About
+                                                        Us
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="#">Our Services
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="#">Work
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="#">Clientele
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="./contact-us.html">Contact
+                                                        Us
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="get-in-touch">
+                                            <h5>Get in Touch</h5>
+                                            <ul>
+                                                <li class="get-in-touch-links">
+                                                    <img
+                                                        src="./assets/images/map-icon.png"
+                                                        alt="map-icon">
+                                                    <span>
+                                                        Lorem ipsum dolor sit
+                                                        amet. Sit autem
+                                                        autemLorem ipsum dolor
+                                                        sit amet. Sit autem
+                                                        autem
+                                                    </span>
+                                                </li>
+
+                                                <li class="get-in-touch-links">
+                                                    <img
+                                                        src="./assets/images/mail-icon.png"
+                                                        alt="mail-icon">
+                                                    <span>
+                                                        <a
+                                                            href="mailto:contact@company.com">contact@company.com</a>
+
+                                                    </span>
+                                                </li>
+
+                                                <li class="get-in-touch-links">
+                                                    <img
+                                                        src="./assets/images/phone-icon.png"
+                                                        alt="phone-icon">
+                                                    <span>
+                                                        <a
+                                                            href="tel:9876543210">
+                                                            9876543210
+                                                        </a>
+
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="copyright-text">
+                            <p>© 2024 · Scoville Retail, All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="./script.js"></script>
+    </body>
+
+</html>

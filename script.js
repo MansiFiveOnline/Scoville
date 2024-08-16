@@ -160,9 +160,100 @@ $(document).ready(function () {
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     if (scroll > 150) {
-      $(".nav-transparent").css("background", "rgb(255 254 254 / 53%)");
+      $(".nav-transparent").css("background", "rgb(41 38 38 / 58%)");
     } else {
       $(".nav-transparent").css("background", "transparent");
     }
+  });
+});
+
+$(document).ready(function () {
+  var owl = $(".signage-brands-carousel-content");
+  owl.owlCarousel({
+    items: 5,
+    margin: 50,
+    loop: true,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    slideTransition: "linear",
+    smartSpeed: 3000,
+    responsive: {
+      0: {
+        items: 2.5,
+        margin: 50,
+      },
+      480: {
+        items: 3,
+        margin: 50,
+      },
+      575: {
+        items: 3,
+        margin: 50,
+      },
+      768: {
+        items: 4.5,
+        margin: 0,
+      },
+      992: {
+        items: 4,
+        margin: 20,
+      },
+      1199: {
+        items: 5,
+        margin: 50,
+      },
+      1400: {
+        items: 7,
+      },
+    },
+  });
+
+  // Handle tab click event
+  $(".tab").on("click", function () {
+    var tabId = $(this).data("tab");
+
+    // Remove active class from all tabs and content panes
+    $(".tab").removeClass("active");
+    $(".tab-pane").removeClass("active");
+
+    // Add active class to the clicked tab and corresponding content pane
+    $(this).addClass("active");
+    $("#" + tabId).addClass("active");
+  });
+
+  // Optionally activate the first tab and content by default
+  $(".tab").first().addClass("active");
+  $(".tab-pane").first().addClass("active");
+});
+
+$(document).ready(function () {
+  var owl = $(".clients-carousel-content");
+  owl.owlCarousel({
+    items: 3,
+    margin: 70,
+    loop: false,
+    dots: true,
+    autoplay: false,
+    slideTransition: "linear",
+    responsive: {
+      0: {
+        items: 1,
+        margin: 50,
+      },
+      480: {
+        items: 1,
+        margin: 50,
+      },
+      768: {
+        items: 3,
+        margin: 15,
+      },
+
+      1400: {
+        items: 3,
+        margin: 30,
+      },
+    },
   });
 });

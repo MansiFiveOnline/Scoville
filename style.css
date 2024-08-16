@@ -21,9 +21,9 @@ html {
 
 /* HOME PAGE  */
 
-.video-banner {
+/* .video-banner {
   height: 100vh;
-}
+} */
 
 .video-play-btn {
   position: absolute;
@@ -122,7 +122,7 @@ html {
 }
 
 .nav-colored {
-  background-color: rgb(255 254 254 / 53%) !important;
+  background-color: rgb(41 38 38 / 58%) !important;
 }
 .nav-transparent {
   background-color: transparent;
@@ -142,7 +142,7 @@ html {
 .home-service-img1,
 .home-service-img2 {
   width: 100%;
-  height: 95vh;
+  /* height: 95vh; */
   display: block;
   filter: brightness(0.5);
   cursor: pointer;
@@ -261,7 +261,8 @@ h2 {
 
 .counter-content1 h2,
 .counter-content2 h2,
-.counter-content3 h2 {
+.counter-content3 h2,
+.counter-content4 h2 {
   font-size: 45px;
   font-weight: 700;
   line-height: 90.75px;
@@ -270,7 +271,8 @@ h2 {
 
 .counter-content1 p,
 .counter-content2 p,
-.counter-content3 p {
+.counter-content3 p,
+.counter-content4 p {
   color: var(--white-text);
   font-size: 18px;
   font-weight: 400;
@@ -607,7 +609,215 @@ h2 {
   border: none;
   color: var(--white-text);
 }
+
+/* SIGNAGE */
+
+.video-banner.singage {
+  position: relative;
+}
+
+.banner-text {
+  position: absolute;
+  top: 40%;
+}
+
+.banner-text h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  /* line-height: 98px; */
+}
+
+.grow-business.signage {
+  padding-top: 0;
+}
+
+.signage-brands {
+  margin: 80px 0;
+}
+
+.signage-images {
+  position: relative;
+}
+
+.signage-images .col-lg-3 {
+  position: absolute;
+  z-index: 150;
+  top: 20%;
+  left: 10%;
+}
+
+.signage-images .col-lg-3 img {
+  width: 498px;
+  height: 582px;
+  object-fit: cover;
+}
+
+.signage-images .col-lg-2 {
+  position: absolute;
+  top: -5%;
+  right: 30%;
+}
+
+.signage-images .col-lg-2 img {
+  width: 286px;
+  height: 320px;
+  object-fit: cover;
+}
+
+.signage-images .col-lg-1 {
+  position: absolute;
+}
+
+.signage-images .col-lg-2 img {
+  width: 286px;
+  height: 320px;
+  object-fit: cover;
+}
+
+.signage-points {
+  padding: 40px 0;
+}
+
+.signage-points li {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--white-text);
+}
+
+.tabs {
+  display: flex;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+  filter: brightness(0.5);
+  border: none;
+}
+
+.tab-content {
+  padding: 20px;
+  border-top: none;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+.tab.active {
+  filter: none;
+}
+
+.signage-brand-imgs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 5px;
+}
+
+.signage-brand-imgs img {
+  object-fit: cover;
+  height: 200px;
+  width: 300px;
+}
+
+.clients {
+  margin: 90px 0 50px 0;
+}
+
+.clients h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.clients-carousel-content .owl-item {
+  background-color: var(--whatsapp-bg);
+  margin: 20px 30px;
+  /* width: 411px;
+  height: 279px; */
+  border-radius: 10px;
+}
+
+.item-card .client-content {
+  margin: 40px 25px 20px 35px;
+  color: var(--white-text);
+}
+
+.item-card .client-content p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.69px;
+}
+
+.profile {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.profile-img img {
+  height: 67.99px;
+  width: 67.99px !important;
+  border-radius: 50%;
+}
+
+.profile-content {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.profile .profile-content h5 {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 21.27px;
+}
+
+.profile .profile-content p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21.27px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  background: var(--placeholder-text);
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background-color: var(--white-text);
+}
+
 /* MOBILE RESPONSIVE  */
+
+@media screen and (max-width: 1030px) {
+  .banner-text {
+    top: 15%;
+  }
+
+  .signage-images .col-lg-3 {
+    left: 5%;
+  }
+
+  .signage-images .col-lg-2 {
+    right: 32%;
+  }
+
+  .signage-images .col-lg-1 {
+    left: 0%;
+  }
+
+  .vision-mission,
+  .brands {
+    height: auto;
+  }
+}
 
 @media screen and (max-width: 900px) {
   .video-banner {
@@ -760,6 +970,28 @@ h2 {
     margin-top: 140px;
     padding-bottom: 80px;
   }
+
+  .signage-images .col-lg-3 {
+    position: relative;
+    top: 0;
+    left: 18%;
+  }
+
+  .signage-images .col-lg-2 {
+    position: absolute;
+    top: -14%;
+    right: 9%;
+  }
+
+  .signage-images .col-lg-1 {
+    position: absolute;
+    top: -9%;
+    left: 14%;
+  }
+
+  .banner-text {
+    top: 40%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -774,5 +1006,23 @@ h2 {
 
   .owl-navs {
     top: 30%;
+  }
+
+  .signage-images .col-lg-3 {
+    position: relative;
+    top: 0;
+    left: -22px;
+  }
+
+  .signage-images .col-lg-2 {
+    position: absolute;
+    top: -14%;
+    right: -20%;
+  }
+
+  .signage-images .col-lg-1 {
+    position: absolute;
+    top: -9%;
+    left: -5%;
   }
 }
